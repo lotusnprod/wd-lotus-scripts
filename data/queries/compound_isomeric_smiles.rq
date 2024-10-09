@@ -1,0 +1,15 @@
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX pr: <http://www.wikidata.org/prop/reference/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+PREFIX wd: <http://www.wikidata.org/entity/>
+SELECT DISTINCT ?chemical_compound ?isomeric_smiles WHERE {
+  VALUES ?chemical_classes { wd:Q11173 wd:Q59199015 wd:Q113145171 } 
+  ?chemical_compound wdt:P31|wdt:P279/wdt:P31|wdt:P279 ?chemical_classes. 
+													   ?chemical_compound p:P703 ?statement.
+													   ?chemical_compound wdt:P2017 ?isomeric_smiles .  # Filter for entities with isomeric SMILES
+													   ?statement ps:P703 ?taxon;
+													   (prov:wasDerivedFrom/pr:P248) ?reference.
+}
