@@ -37,14 +37,14 @@ python src/query_maker.py --query data/queries/compound_taxon_ref_full.rq --outp
 
 ### Query Files description
 
-- compound_taxon_ref_full.rq : This query retrieves the Wikidata QID of the chemical compounds, their canonical SMILES, the Wikidata QID of the taxon they are associated with, the taxon name, the Wikidata QID of the reference, and the DOI for the reference.
+- **compound_taxon_ref_full.rq** : This query retrieves the Wikidata QID of the chemical compounds, their canonical SMILES, the Wikidata QID of the taxon they are associated with, the taxon name, the Wikidata QID of the reference, and the DOI for the reference.
 
-- compound_taxon_ref.rq : This query retrieves the Wikidata QID of the chemical compounds, the Wikidata QID of the taxon they are associated with and the Wikidata QID of the reference. No additional information.
+- **compound_taxon_ref.rq** : This query retrieves the Wikidata QID of the chemical compounds, the Wikidata QID of the taxon they are associated with and the Wikidata QID of the reference. No additional information.
 
-- compound_canonical_smiles.rq : This query retrieves the Wikidata QID of the chemical compounds and their canonical SMILES.
+- **compound_canonical_smiles.rq** : This query retrieves the Wikidata QID of the chemical compounds and their canonical SMILES.
 
-- compound_isomeric_smiles.rq : This query retrieves the Wikidata QID of the chemical compounds and their isomeric SMILES.
+- **compound_isomeric_smiles.rq** : This query retrieves the Wikidata QID of the chemical compounds and their isomeric SMILES.
 
-- ref_doi.rq : This query retrieves the Wikidata QID of the reference and the DOI.
+- **ref_doi.rq** : This query retrieves the Wikidata QID of the reference and the DOI.
 
-- taxo_taxo_name.rq : This query retrieves the Wikidata QID of the taxon and the taxon name.
+- **taxo_taxo_name.rq** : This query retrieves the Wikidata QID of the taxon and the taxon name.
