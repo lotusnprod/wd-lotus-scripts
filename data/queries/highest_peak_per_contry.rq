@@ -4,6 +4,7 @@ PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX p: <http://www.wikidata.org/prop/>
+
 SELECT DISTINCT ?country ?country_name ?mountain ?mountain_name ?max_height WHERE {
   { SELECT ?country (MAX(?height) AS ?max_height) WHERE {
     ?mountain wdt:P31/wdt:P279* wd:Q8502 .

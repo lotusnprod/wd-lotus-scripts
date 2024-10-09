@@ -3,8 +3,8 @@ PREFIX p: <http://www.wikidata.org/prop/>
 PREFIX ps: <http://www.wikidata.org/prop/statement/>
 PREFIX pr: <http://www.wikidata.org/prop/reference/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
-
 PREFIX wd: <http://www.wikidata.org/entity/>
+
 SELECT DISTINCT ?reference ?DOI WHERE {
   VALUES ?chemical_classes { wd:Q11173 wd:Q59199015 wd:Q113145171 } 
   ?chemical_compound wdt:P31|wdt:P279/wdt:P31|wdt:P279 ?chemical_classes. 
