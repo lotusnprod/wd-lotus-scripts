@@ -4,9 +4,11 @@ PREFIX ps: <http://www.wikidata.org/prop/statement/>
 PREFIX pr: <http://www.wikidata.org/prop/reference/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 
-SELECT DISTINCT ?compound ?taxon ?reference WHERE {
-  ?compound p:P703 ?statement;
-				   wdt:P233 ?canonical_smiles.
-				   ?statement ps:P703 ?taxon;
-				   (prov:wasDerivedFrom/pr:P248) ?reference.
+PREFIX wd: <http://www.wikidata.org/entity/>
+SELECT DISTINCT ?chemical_compound ?taxon ?reference WHERE {
+  VALUES ?chemical_classes { wd:Q11173 wd:Q59199015 wd:Q113145171 } 
+  ?chemical_compound wdt:P31|wdt:P279/wdt:P31|wdt:P279 ?chemical_classes. 
+													   ?chemical_compound p:P703 ?statement.
+													   ?statement ps:P703 ?taxon;
+													   (prov:wasDerivedFrom/pr:P248) ?reference.
 }
