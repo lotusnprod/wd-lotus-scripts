@@ -44,7 +44,7 @@ python src/query_maker.py --query data/queries/compound_taxon_ref_full.rq --outp
 
 ### Query Files description
 
-- **compound_taxon_ref_full.rq** : This query retrieves the Wikidata QID of the chemical compounds, their canonical SMILES, the Wikidata QID of the taxon they are associated with, the taxon name, the Wikidata QID of the reference, and the DOI for the reference.
+- **compound_taxon_ref_full.rq** : This query retrieves the Wikidata QID of the chemical compounds, their canonical SMILES, their isomeric SMILES (if present), the Wikidata QID of the taxon they are associated with, the taxon name, the Wikidata QID of the reference, and the DOI for the reference.
 
 - **compound_taxon_ref.rq** : This query retrieves the Wikidata QID of the chemical compounds, the Wikidata QID of the taxon they are associated with and the Wikidata QID of the reference. No additional information.
 
