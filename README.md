@@ -36,7 +36,7 @@ You can specify the query file, endpoint, and output file using the following ar
 
 ### Example 
 
-For example, to retrieve the full LOTUS dataset from the Qlever endpoint and save the results as `lotus_results.json`, you can run:
+For example, to retrieve the full LOTUS dataset from the Qlever endpoint and save the results as `full_lotus_results.json`, you can run:
 
 ```bash
 python src/query_maker.py --query data/queries/compound_taxon_ref_full.rq --output data/results/full_lotus_results.json
