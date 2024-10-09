@@ -12,6 +12,13 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Clone this repository
+
+```bash
+git clone https://github.com/lotusnprod/wd-lotus-scripts.git
+cd wd-lotus-scripts
+```
+
 ### Running the Script
 
 To run the script, use the following command:
