@@ -7,7 +7,7 @@ This Python script allows you to execute SPARQL queries stored in `.rq` files on
 Ensure you have Python 3 installed and install the required libraries by running:
 
 ```bash
-pip install requests
+pip install -r requirements.txt
 ```
 
 ## Usage
