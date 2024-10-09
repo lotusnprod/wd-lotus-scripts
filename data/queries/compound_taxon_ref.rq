@@ -1,0 +1,12 @@
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX ps: <http://www.wikidata.org/prop/statement/>
+PREFIX pr: <http://www.wikidata.org/prop/reference/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT DISTINCT ?compound ?taxon ?reference WHERE {
+  ?compound p:P703 ?statement;
+				   wdt:P233 ?canonical_smiles.
+				   ?statement ps:P703 ?taxon;
+				   (prov:wasDerivedFrom/pr:P248) ?reference.
+}
